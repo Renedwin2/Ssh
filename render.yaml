@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: web-ssh
+    env: docker
+    plan: free
+    autoDeploy: true
+    dockerfilePath: ./Dockerfile
+    ports:
+      - port: 10000
+        protocol: http
